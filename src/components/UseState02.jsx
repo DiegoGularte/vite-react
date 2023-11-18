@@ -19,7 +19,7 @@ export default () => {
 
     return (
         <>
-            <h4>useState</h4>
+            <h4>useState 2</h4>
             <p> Valor:  {valor}</p>
             <button onClick={diminuir}>diminuir</button>
             <button onClick={aumentar}>aumentar</button>
