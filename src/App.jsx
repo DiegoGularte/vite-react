@@ -1,35 +1,26 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react';
+import UseState02 from './components/UseState02';
+import UseState01 from './components/UseState01';
+import UseState03 from './components/UseState03';
+import UseState04 from './components/UseState04';
+import UseState05 from './components/useState05';
+import UseState06 from './components/UseState06';
+import UseState08 from './components/UseState08';
 
-function App() {
-  const [count, setCount] = useState(0)
-
+export default () => {
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <h1>React</h1>
+      <UseState01 />
+      <UseState02 />
+      {/*<UseState03/>*/}
+      {/* <UseState04 /> */}
+      {/* <UseState05 /> */}
+      <UseState06 />
+      <UseState08 />
+
+
+
     </>
   )
 }
-
-export default App
